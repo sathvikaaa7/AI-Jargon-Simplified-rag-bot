@@ -49,26 +49,43 @@ LangChain-based RAG pipeline
 
 
 ### Tech Stack
+
 Python
+
 LangChain
+
 Google Gemini API
+
 ChromaDB
+
 Sentence Transformers
+
 PyPDF / PyMuPDF
 
 ### Working
+
 PDF documents are loaded into the system.
+
 The text is split into smaller chunks.
+
 Embeddings are generated for each chunk.
+
 Embeddings are stored in a vector database.
+
 Relevant chunks are retrieved based on the user query.
+
 Retrieved context is passed to Gemini for response generation.
 
 ### Future Improvements
+
 Streamlit UI integration
+
 Multiple file support
+
 Chat history and memory
+
 Source citation display
+
 Improved prompt engineering
 
 ### Learning Outcome
@@ -76,10 +93,15 @@ Improved prompt engineering
 This project was built while learning about:
 
 Retrieval-Augmented Generation (RAG)
+
 LangChain
+
 Vector databases
+
 Embeddings
+
 Google Gemini API integration
+
 AI application development
 
 ## Contributing
