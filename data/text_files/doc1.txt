@@ -1,0 +1,161 @@
+LangChain
+
+LangChain is an open-source framework used for building applications powered by Large Language Models (LLMs). It helps developers connect language models with external data sources, APIs, databases, and tools to create intelligent AI applications.
+
+Why LangChain is Used:
+Large Language Models like GPT are powerful, but they have limitations:
+- They may not have real-time information.
+- They cannot directly access private data.
+- They may hallucinate incorrect answers.
+
+LangChain solves these problems by enabling:
+- Retrieval-Augmented Generation (RAG)
+- Tool usage
+- Memory handling
+- Agent-based workflows
+- Prompt management
+
+Core Components of LangChain:
+
+1. LLMs and Chat Models
+LangChain supports multiple AI models such as:
+- OpenAI GPT models
+- Gemini
+- Claude
+- Hugging Face models
+
+Example:
+A chatbot using GPT-4 through LangChain.
+
+2. Prompt Templates
+Prompt templates help structure prompts dynamically.
+
+Example:
+"You are a helpful assistant. Answer the following question: {question}"
+
+Benefits:
+- Reusable prompts
+- Cleaner code
+- Dynamic input handling
+
+3. Chains
+Chains combine multiple operations into a workflow.
+
+Example Workflow:
+User Question → Retrieve Documents → Generate Answer
+
+Types:
+- Simple Chains
+- Sequential Chains
+- Router Chains
+
+4. Document Loaders
+Document loaders import data from various sources.
+
+Supported Sources:
+- PDF files
+- Text files
+- CSV files
+- Websites
+- YouTube transcripts
+
+Example:
+Loading a PDF research paper into a RAG system.
+
+5. Text Splitters
+Large documents are split into smaller chunks before embedding.
+
+Why?
+LLMs have token limits and smaller chunks improve retrieval quality.
+
+Popular Splitters:
+- RecursiveCharacterTextSplitter
+- CharacterTextSplitter
+
+6. Embeddings
+Embeddings convert text into numerical vectors so machines can understand semantic meaning.
+
+Popular Embedding Models:
+- OpenAI Embeddings
+- HuggingFace Embeddings
+
+7. Vector Stores
+Vector databases store embeddings for similarity search.
+
+Popular Vector Stores:
+- ChromaDB
+- FAISS
+- Pinecone
+- Weaviate
+
+Purpose:
+Retrieve the most relevant information based on user queries.
+
+8. Retrievers
+Retrievers search vector databases and fetch relevant document chunks.
+
+Workflow:
+User Query → Embedding → Similarity Search → Relevant Documents
+
+9. Memory
+Memory allows chatbots to remember previous conversations.
+
+Types:
+- ConversationBufferMemory
+- ConversationSummaryMemory
+
+Example:
+Remembering the user's name during a chat session.
+
+10. Agents
+Agents allow AI systems to make decisions and use tools dynamically.
+
+Examples:
+- Web search agents
+- Calculator agents
+- Database query agents
+
+An agent can decide:
+- Which tool to use
+- What action to take
+- How to respond
+
+What is RAG in LangChain?
+
+Retrieval-Augmented Generation (RAG) is one of the most popular LangChain applications.
+
+RAG Pipeline:
+1. Load documents
+2. Split text into chunks
+3. Convert chunks into embeddings
+4. Store embeddings in vector database
+5. Retrieve relevant chunks
+6. Send context to LLM
+7. Generate response
+
+Benefits of LangChain:
+- Simplifies AI application development
+- Supports multiple LLM providers
+- Modular architecture
+- Excellent for RAG applications
+- Large community support
+
+Applications of LangChain:
+- AI chatbots
+- PDF question-answering systems
+- Research assistants
+- AI customer support
+- Coding assistants
+- Knowledge base systems
+
+Popular LangChain Modules:
+- langchain_core
+- langchain_openai
+- langchain_community
+- langchain_text_splitters
+
+Example Import:
+from langchain_core.documents import Document
+
+Future of LangChain:
+LangChain is becoming a major framework in the AI ecosystem because it simplifies the development of intelligent applications using LLMs, vector databases, and external tools.
