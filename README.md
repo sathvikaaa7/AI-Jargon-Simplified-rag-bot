@@ -34,11 +34,17 @@ The project currently uses my own AI learning blog series content (exported as P
 
 ### Features:
 PDF document loading
+
 Text chunking and preprocessing
+
 Embedding generation
+
 Vector database retrieval
+
 Context-aware AI responses
+
 Google Gemini integration
+
 LangChain-based RAG pipeline
 
 
